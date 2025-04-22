@@ -26,6 +26,16 @@
     <!-- App Css-->
     <link href="{{ asset('dist/assets/css/app.min.css') }}" id="app-style" rel="stylesheet" type="text/css" />
 
+    <!-- Google Font - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Theme CSS -->
+    <link href="{{ asset('dist/assets/css/theme-custom.css') }}" rel="stylesheet" type="text/css" />
+
+
     @yield('style')
     @livewireScripts
 </head>
@@ -74,8 +84,7 @@
                         </div>
                         <div class="col-sm-6">
                             <div class="text-sm-end d-none d-sm-block">
-                                Developed by <a href="https://www.linkedin.com/in/ganisjrs/"
-                                    class="text-decoration-underline">Ganis J. R. Silitonga.</a>
+                                Developed by Prodi Sistem Informasi - FSTI
                             </div>
                         </div>
                     </div>
@@ -242,6 +251,22 @@
     <script src="{{ asset('dist/assets/js/pages/modal.init.js') }}"></script>
 
     <script src="{{ asset('dist/assets/js/app.js') }}"></script>
+
+     <!-- Global Init JS -->
+     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Apply entrance animations to common elements
+            if (typeof gsap !== 'undefined') {
+                gsap.from(".card", {
+                    duration: 0.8,
+                    opacity: 0,
+                    y: 20,
+                    stagger: 0.1,
+                    ease: "power3.out"
+                });
+            }
+        });
+    </script>
     @yield('script')
     @livewireScriptConfig
     <div id="js-display-modal"></div>
