@@ -703,3 +703,107 @@ tr:hover .badge-topic {
     position: relative;
     z-index: 1;
 }
+
+/* Tambahkan ke file theme-custom.css */
+
+/* Warna dasar untuk sidebar */
+.vertical-menu {
+    background: #ffffff;
+    border-right: 1px solid rgba(230, 235, 245, 0.7);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.03);
+}
+
+/* Styling menu item */
+#sidebar-menu ul li a {
+    color: #6c757d;
+    font-weight: 500;
+    padding: 0.7rem 1.5rem;
+    border-radius: 8px;
+    margin: 4px 10px;
+    transition: all 0.3s ease;
+}
+
+/* Hover state */
+#sidebar-menu ul li a:hover {
+    background-color: rgba(58, 123, 213, 0.08);
+    color: #3a7bd5;
+}
+
+/* Menu item aktif */
+#sidebar-menu ul li.mm-active > a {
+    background: linear-gradient(135deg, rgba(58, 123, 213, 0.12), rgba(139, 92, 246, 0.12));
+    color: #3a7bd5;
+    font-weight: 600;
+    border-left: 3px solid #3a7bd5;
+}
+
+/* Judul kategori menu */
+.menu-title {
+    color: #adb5bd;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding: 12px 20px 4px;
+}
+
+/* Ikon Menu - dengan berbagai warna */
+/* Dashboard */
+#sidebar-menu ul li a i.fa-tachometer-alt,
+#sidebar-menu ul li a i.fa-home {
+    color: #3a7bd5;
+}
+
+/* Periode/Calendar */
+#sidebar-menu ul li a i.fa-calendar-alt,
+#sidebar-menu ul li a i.fa-calendar,
+#sidebar-menu ul li a i.fa-calendar-check {
+    color: #8b5cf6;
+}
+
+/* Data/User */
+#sidebar-menu ul li a i.fa-users,
+#sidebar-menu ul li a i.fa-user-tie,
+#sidebar-menu ul li a i.fa-user-graduate {
+    color: #0891b2;
+}
+
+/* Dokumen/File */
+#sidebar-menu ul li a i.fa-file-alt,
+#sidebar-menu ul li a i.fa-clipboard-list,
+#sidebar-menu ul li a i.fa-file-signature {
+    color: #d97706; 
+}
+
+/* Task/Aktivitas */
+#sidebar-menu ul li a i.fa-tasks,
+#sidebar-menu ul li a i.fa-chalkboard-teacher,
+#sidebar-menu ul li a i.fa-award {
+    color: #00cdac;
+}
+
+/* Submenu styling */
+.sub-menu {
+    padding-left: 10px;
+}
+
+.sub-menu li a {
+    font-size: 14px;
+    padding: 8px 20px 8px 15px !important;
+}
+
+/* Efek Hover yang lebih menarik */
+#sidebar-menu ul li a:hover i {
+    transform: translateX(3px);
+    transition: transform 0.3s ease;
+}
+
+/* Animasi untuk submenu */
+.mm-collapse {
+    transition: all 0.3s ease-out;
+}
+
+/* Hover efek pada dropdown arrow */
+.has-arrow:hover .menu-arrow {
+    transform: rotate(90deg);
+    transition: transform 0.3s ease;
+}
